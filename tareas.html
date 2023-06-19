@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tareas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TAREAS</h1>
+    <div class="task-list">
+      <h2>Personales</h2>
+      <input type="text" id="personalInput" placeholder="Enter a new task">
+      <button class="addTaskBtn" onclick="addTask('personalTaskList', 'personalInput')">Agregar Tarea</button>
+      <ul id="personalTaskList"></ul>
+      <button class="clearBtn" onclick="clearTasks('personalTaskList')">Limpiar</button>
+
+    </div>
+    <div class="task-list">
+      <h2>Laborales</h2>
+      <input type="text" id="workInput" placeholder="Enter a new task">
+      <button class="addTaskBtn" onclick="addTask('workTaskList', 'workInput')">Agregar Tarea</button>
+      <ul id="workTaskList"></ul>
+      <button class="clearBtn" onclick="clearTasks('workTaskList')">Limpiar</button>
+
+    </div>
+  </div>
+  
+    <script src="main.js"></script>
+</body>
+</html>
